@@ -13,7 +13,7 @@ class QueryBuilder {
     }
 
     setCoords(latitudine, longitudine) {
-        this.query.coords = { lat: latitudine, lng: longitudine };
+        this.query.coords = { lat: parseFloat(latitudine), lng: parseFloat(longitudine) };
         return this;
     }
 

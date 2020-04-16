@@ -35,8 +35,8 @@ async function threadStart() {
                 }
 
             }
-            ricerca.coords.lat = parseFloat(ricerca.coords.lat);
-            ricerca.coords.lng = parseFloat(ricerca.coords.lng);
+            ricerca.coords.lat = ricerca.coords.lat;
+            ricerca.coords.lng = ricerca.coords.lng;
             parentPort.postMessage(ricerca);
 
         }
